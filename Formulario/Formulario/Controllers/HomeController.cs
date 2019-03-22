@@ -21,11 +21,11 @@ namespace Formulario.Controllers
         {
             string resposta = "";
 
-            if (nome != "") {
+            if (nome != "" ) {
                 //preparar a resposta a enviar para a view
                 resposta = "você chama-se " + nome; 
             }
-            if (idade != null)
+            if (idade != null && idade >=10 && idade <= 120)
             {
                resposta +=" e tem " + idade + " anos.";
             }

@@ -21,8 +21,8 @@
         @* formulário para receber os meus dados *@
         <form method="post">
 
-            qual o seu nome? <input type="text" maxlength="20" name="nome" /><br />
-            qual a sua idade? <input type="number" maxlength="3" name="idade" /><br />
+            qual o seu nome? <input type="text" maxlength="20" name="nome" required="required"/><br />
+            qual a sua idade? <input type="number" maxlength="3" name="idade" required="required" min="0" max="120"/><br />
             <input type="submit" value="Enviar dados para o servidor" />
 
         </form>
